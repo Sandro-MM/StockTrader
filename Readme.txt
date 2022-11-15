@@ -1,1 +1,2 @@
-Agro alalitics
+StockTrader
+First commit: Navbar+Burgerbar+background
