@@ -1,0 +1,238 @@
+body{
+    background-color: black;
+    
+}
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    margin: 0 auto;
+}
+.particles-js{
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+/* burger header */
+header{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+}
+header.active{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,1);
+}
+header.active2::before{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+    background: rgba(255, 255, 255);
+}
+
+
+header.active2{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(255, 255, 255);
+    transition: all 0.3s ease 0s;
+}
+
+a{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease 0s;
+  }
+  a.active2{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    transition: all 0.3s ease 0s;
+  }
+
+a.active{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.logo{
+    padding-bottom: 10px;
+    z-index: 100;
+    padding-top: 20px;
+    padding-left: 30%;
+    transition: all 0.3s ease 0s;
+}
+.logo.active2{
+    display: none;
+}
+.logoblack{
+    display: none; 
+}
+.logoblack.active2{
+    z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.header__burger{
+    display: none;
+    
+}
+
+
+
+
+
+.header__body{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+.header__menu{
+    margin-left: 15px;
+    position: relative;
+    z-index: 2;
+}
+  .header__nav{
+    padding: 2% 8%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+  }
+  .header__nav li{
+    z-index: 1;
+    font-size: 20px;
+    padding-top: 18px;
+
+  }
+
+
+@media (max-width:767px){
+    header::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        z-index: 100;
+        background: rgba(0,0,0,1);
+    }
+    body.lock{
+        overflow: hidden;
+    }
+    .header__body{
+        height: 100%;
+    }
+    .header__burger{
+        margin-left: 55%;
+        margin-top: 30px;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 101;
+    }
+    .header__burger span{
+        margin-top: 17px;
+        position: absolute;
+        background-color: #B6B6B4;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        margin-top: 34px;
+        background-color: #B6B6B4;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+        z-index: 100;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+
+    .header__burger.active::before{
+        margin-top: 18.5px;
+        transform: rotate(45deg);
+        top: 9px;
+        z-index: 4;
+
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: -9.9px;
+
+    }
+    .header__burger.active span{
+        transform: scale(0);
+    }
+    
+    .header__menu{
+        color: white;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 3;
+        transition: all 0.3s ease 0s;
+
+    }
+
+    .header__menu.active{
+        top: 0;
+        z-index: 1;
+    }
+    .particles-js.active{
+        background-color: black;
+        z-index: 1;
+        transition: all 0.3s ease 0s;
+    }
+    .header__nav{
+        z-index: 4;
+        padding:70px 20%;
+        display: block;
+        margin: 10px 15px;
+    }
+
+}
+/* burger header */
+
+.content{
+    padding-top: 150px;
+    color: white;
+    z-index: -1;
+}
+
