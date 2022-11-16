@@ -2,10 +2,10 @@
 $(document).ready(function() {
     $('.header__burger').click(function(events) {
         if ((window.scrollY) >= 100){
-            $('.header__burger,.header__menu,.particles-js,a,header').toggleClass('active').toggleClass('active2');
+            $('.header__burger,.header__menu,.particles-js,.header__nav a,header').toggleClass('active').toggleClass('active2');
             $('body').toggleClass('lock')
         }else{
-            $('.header__burger,.header__menu,.particles-js,a,header').toggleClass('active').remove('active2');
+            $('.header__burger,.header__menu,.particles-js,.header__nav a,header').toggleClass('active').remove('active2');
             $('body').toggleClass('lock')
         }
             
@@ -15,9 +15,9 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(window).scroll(function() {
         if ((window.scrollY) >= 100){
-            $('header,a,.logo,.logoblack').addClass('active2');
+            $('header,.header__nav a,.logo,.logoblack').addClass('active2');
         }else{
-            $('header,a,.logo,.logoblack').removeClass('active2');
+            $('header,.header__nav a,.logo,.logoblack').removeClass('active2');
         }
     });
 });
