@@ -268,6 +268,8 @@ header.active2{
     animation: nospin 15s linear infinite;
 }
 
+
+
 @keyframes nospin{
     10%{
         transform: rotate(-4deg);
@@ -335,7 +337,415 @@ header.active2{
     }
 }
 
+.middle{
+    padding-top: 90px;
+    text-align: center;
+    z-index: 3;
+}
+.title1{
+    color: #B6B6B4;
+    font-size: 24px;
+    padding: 20px 0;
+}
+.title2{
+    color: #B6B6B4;
+    font-size: 30px;
+}
+.middle span{
+    color: rgb(255, 255, 255);
+}
 
+.content__left{
+    height: 1000px;
+}
+
+.container12{
+    top: 100px;
+    position: sticky;
+    height: 500px;
+    width: 500;
+    background: transparent;
+    border-radius: 10px;
+
+}
+.inner2sticky{
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    
+}
+.inner2{
+    position: absolute;
+    background: #a0a09e;
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(50% 24%, 72% 37%, 50% 49%, 28% 37%);
+    animation: move2 10s linear infinite;
+}
+.inner{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(29% 62%, 50% 74%, 50% 49%, 28% 37%);
+    animation: move3 10s linear infinite;
+}
+.inner3{
+    position: absolute;
+    background: #5a5a5a;
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(71% 62%,50% 74%, 50% 49%,72% 37%);
+    animation: move4 10s linear infinite;
+}
+
+.outer1{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(21% 38%, 21% 66%, 45% 80%, 45% 92%, 11% 72%, 11% 33%);
+    animation: move6 30s linear infinite;  
+}
+
+.outer2{
+    position: absolute;
+    background: #a0a09e;
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(75% 30%, 50% 15%, 25% 30%, 15% 24%, 49% 4%, 85% 24%);
+    animation: move5 30s linear infinite;
+    }
+.outer3{
+    position: absolute;
+    background: #5a5a5a;
+    border-radius: 10px;
+    width: 380px;
+    height: 380px;
+    clip-path: polygon(53% 80%, 79% 66%, 79% 38%, 89% 32%, 89% 71%, 54% 92%);
+    animation: move7 30s linear infinite;
+    }
+
+    @keyframes move2{
+        10%{
+            margin-top: -2px;
+        }
+        20%{
+            margin-top: -4px;
+        }
+        30%{
+            margin-top: -6px;
+        }
+        40%{
+            margin-top: -8px;
+        }
+        50%{
+            margin-top: -10px;
+        }
+        60%{
+            margin-top: -8px;
+        }
+        70%{
+            margin-top: -6px;
+        }
+        80%{
+            margin-top: -4px;
+        }
+        90%{
+            margin-top: -2px;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+    @keyframes move3{
+        10%{
+            margin-top: 2px;
+            margin-left: -2px;
+        }
+        20%{
+            margin-top: 4px;
+            margin-left: -4px;
+        }
+        30%{
+            margin-top: 6px;
+            margin-left: -6px;
+        }
+        40%{
+            margin-top: 8px;
+            margin-left: -8px;
+        }
+        50%{
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+        60%{
+            margin-top: 8px;
+            margin-left: -8px;
+        }
+        70%{
+            margin-top: 6px;
+            margin-left: -6px;
+        }
+        80%{
+            margin-top: 4px;
+            margin-left: -4px;
+        }
+        90%{
+            margin-top: 2px;
+            margin-left: -2px;
+        }
+        100%{
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+    @keyframes move4{
+        10%{
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        20%{
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+        30%{
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+        40%{
+            margin-top: 8px;
+            margin-left: 8px;
+        }
+        50%{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        60%{
+            margin-top: 8px;
+            margin-left: 8px;
+        }
+        70%{
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+        80%{
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+        90%{
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+        100%{
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+
+    @keyframes move5{
+        0%{
+            margin-top: 0;
+        }
+        10%{
+            
+            transform: rotate(36deg);
+        }
+        16.6%{
+            margin-top: -15px;
+            margin-left: 15px;
+    
+        }
+        20%{
+            
+            transform: rotate(74deg);
+        }
+        30%{
+            transform: rotate(108deg);
+        }
+        33.2%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        40%{
+            
+            transform: rotate(144deg);
+        }
+        50%{
+            margin-top: 15px;
+            transform: rotate(180deg);
+            
+        }
+        60%{
+            
+            transform: rotate(216deg);
+        }
+        66.4%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        70%{
+           
+            transform: rotate(252deg);
+        }
+        80%{
+            
+            transform: rotate(288deg);
+        }
+        83.2%{
+            margin-top: -15px;
+            margin-left: -15px;
+        }
+        90%{
+            
+            transform: rotate(324deg);
+        }
+        99%{
+    
+        }
+        100%{
+            
+            transform: rotate(360deg);
+            
+        }
+    }
+    @keyframes move6{
+        0%{
+            margin-top: 0;
+        }
+        10%{
+            
+            transform: rotate(36deg);
+        }
+        16.6%{
+            margin-top: -15px;
+            margin-left: -15px;
+    
+        }
+        20%{
+            
+            transform: rotate(74deg);
+        }
+        30%{
+            transform: rotate(108deg);
+        }
+        33.2%{
+            margin-top: 0;
+        }
+        40%{
+            
+            transform: rotate(144deg);
+        }
+        50%{
+            margin-top: -15px;
+            margin-left: 15px;
+            transform: rotate(180deg);
+            
+        }
+        60%{
+            
+            transform: rotate(216deg);
+        }
+        66.4%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        70%{
+           
+            transform: rotate(252deg);
+        }
+        80%{
+            
+            transform: rotate(288deg);
+        }
+        83.2%{
+            margin-top: 15px;
+        }
+        90%{
+            
+            transform: rotate(324deg);
+        }
+        99%{
+    
+        }
+        100%{
+            
+            transform: rotate(360deg);
+            
+        }
+    }
+    @keyframes move7{
+        0%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        10%{
+            
+            transform: rotate(36deg);
+        }
+        16.6%{
+            margin-top: 15px;
+    
+        }
+        20%{
+            
+            transform: rotate(74deg);
+        }
+        30%{
+            transform: rotate(108deg);
+        }
+        33.2%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        40%{
+            
+            transform: rotate(144deg);
+        }
+        50%{
+            margin-top: -15px;
+            margin-left: -15px;
+            transform: rotate(180deg);
+            
+        }
+        60%{
+            
+            transform: rotate(216deg);
+        }
+        66.4%{
+            margin-top: 0px;
+        }
+        70%{
+           
+            transform: rotate(252deg);
+        }
+        80%{
+            
+            transform: rotate(288deg);
+        }
+        83.2%{
+            margin-top: -15px;
+            margin-left: 15px;
+        }
+        90%{
+            
+            transform: rotate(324deg);
+        }
+        99%{
+    
+        }
+        100%{
+            
+            transform: rotate(360deg);
+            
+        }
+    }
 
 
 
@@ -459,6 +869,13 @@ header.active2{
     }
     .top__container{
         max-width: 80%;
+    }
+    .title1{
+        font-size: 18px;
+    }
+    .title2{
+        font-size: 20px;
+        max-width: 300px;
     }
 }
 
