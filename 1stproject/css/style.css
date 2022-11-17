@@ -131,7 +131,7 @@ header.active2{
 
 /*content*/
   .content{
-    pointer-events: all; /*none*/
+    pointer-events: none; /*none*/
     margin-top: 150px;
     margin-left:55px;
     margin-right: 35px;
@@ -760,7 +760,7 @@ header.active2{
 .title__text{
     margin-top: 65px;
     margin-left: -30px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 .feature__desc{
@@ -815,11 +815,11 @@ header.active2{
     height: 1000px;
 }
 .title3{
-    padding-top: 100px;
+    padding-top: 70px;
     padding-left: 80px;
     font-weight: 700;
     text-align: start;
-    font-size: 42px;
+    font-size: 32px;
 }
 .products{
     color: #000000;
@@ -839,12 +839,9 @@ header.active2{
     padding-left: 90px;
     font-size: 24px;
 }
-.products__desc ul li span{
-    font-size: 16px;
-    line-height: 15px;
-}
 .products__desc ul li{
     padding-top: 30px;
+    line-height: 35px;
 }
 .product__photo{
     width: 350px;
@@ -852,7 +849,7 @@ header.active2{
     background: url('../img/mid_2_products.png') center no-repeat;
 }
 .products a{
-    margin-top: -80px;
+    margin-top: -100px;
     margin-left: 20%;
     padding: 15px;
     border-radius: 10px;
