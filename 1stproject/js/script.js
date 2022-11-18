@@ -2,10 +2,10 @@
 $(document).ready(function() {
     $('.header__burger').click(function(events) {
         if ((window.scrollY) >= 100){
-            $('.header__burger,.header__menu,.particles-js,.header__nav a,header').toggleClass('active').toggleClass('active2');
+            $('.header__burger,.header__menu,.particles-js,.header__nav a,header,.logo,.logoblack').toggleClass('active').toggleClass('active2');
             $('body').toggleClass('lock')
         }else{
-            $('.header__burger,.header__menu,.particles-js,.header__nav a,header').toggleClass('active').remove('active2');
+            $('.header__burger,.header__menu,.particles-js,.header__nav a,header,.logo,.logoblack').toggleClass('active').remove('active2');
             $('body').toggleClass('lock')
         }
             
@@ -20,6 +20,22 @@ $(document).ready(function() {
             $('header,.header__nav a,.logo,.logoblack').removeClass('active2');
         }
     });
+});
+
+let stats = document.querySelectorAll('.stat__num');
+let interval = 1000;
+
+stats.forEach((stat)=>{
+  let startValue = 0
+  let endValue =  parseInt(stat.getAttribute('data-val'));
+  let duration = Math.floor(interval/endValue);
+  let counter = setInterval(function() {
+    startValue += 1;
+    stat.textContent = startValue;
+    if (startValue == endValue) {
+        clearInterval(counter);
+    }
+  }, duration);
 });
 
 
