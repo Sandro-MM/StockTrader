@@ -132,7 +132,7 @@ header.active2{
 
 /*content*/
   .content{
-    pointer-events: none; /*none*/
+    pointer-events: all; /*none*/
     margin-top: 150px;
     margin-left: 0;
     margin-right: 35px;
@@ -182,10 +182,11 @@ header.active2{
     font-size: 24px;
     border-radius: 10px;
     z-index: 1;
+    transition: all 0.1s ease 0s;
 }
  
 .buttons a:hover{
-    font-weight: 500;
+    font-weight: 450;
     color: #1C1C1E;
     background: rgb(255, 255, 255);
     text-shadow: 0 0 1px #1C1C1E;
@@ -197,6 +198,9 @@ header.active2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 400px;
+}
+.contacts a{
+    transition: all 0.3s ease 0s;
 }
 
 .contacts a:nth-child(1){
@@ -214,6 +218,10 @@ header.active2{
 }
 .contacts a:nth-child(4){
     background: url('../img/TGwhite.png') center no-repeat;
+    background-size: 60%;
+}
+.contacts a:nth-child(5){
+    background: url('../img/email-whie.png') center no-repeat;
     background-size: 60%;
 }
 
@@ -240,6 +248,13 @@ header.active2{
 }
 .contacts a:nth-child(4):hover{
     background: url('../img/TGblack.png') center no-repeat;
+    background-size: 60%;
+    background-color: white;
+    box-shadow: -3px 3px 7px  #ffffff73, 3px 3px 5px rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+}
+.contacts a:nth-child(5):hover{
+    background: url('../img/email.png') center no-repeat;
     background-size: 60%;
     background-color: white;
     box-shadow: -3px 3px 7px  #ffffff73, 3px 3px 5px rgb(255, 255, 255);
@@ -870,6 +885,7 @@ header.active2{
     color: rgb(255, 255, 255);
     font-size: 24px;
     z-index: 1;
+    transition: all 0.1s ease 0s;
 }
 .products a:hover{
     font-weight: 500;
@@ -877,7 +893,7 @@ header.active2{
     background: rgb(0, 0, 0);
     text-shadow: 0 0 1px #1C1C1E;
     box-shadow: -3px 3px 7px  #ffffff73, 3px 3px 5px rgb(0, 0, 0);
-    transition: all 0.3s ease 0s;
+    
 }
 .bottom{
     justify-items: center;
@@ -898,6 +914,7 @@ header.active2{
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
+    transition: all 0.7s ease 0s;
 }
 .stats:hover{
     color: #000000;
@@ -985,6 +1002,7 @@ header.active2{
     border-radius: 50px;
     width: 150px;
     height: 55px;
+    transition: all 0.3s ease 0s;
 }
 .email__submit:hover{
     font-weight: 500;
@@ -1004,6 +1022,10 @@ header.active2{
     width: 350px;
     height: 400px;
     background-color: #808282;
+    transition: all 0.3s ease 0s;
+}
+.blog__one:hover{
+    background-color: #acacac;
 }
 .blog__two{
     pointer-events: all;
@@ -1011,6 +1033,11 @@ header.active2{
     width: 350px;
     height: 420px;
     background-color: #5a5a5a;
+    transition: all 0.3s ease 0s;
+}
+.blog__two:hover{
+    background-color: #acacac;
+    transition: all 0.3s ease 0s;
 }
 .blog__photo{
     border-radius: 39px 39px 0 0;
@@ -1078,6 +1105,172 @@ footer{
     pointer-events: all;
     color: #fff;
 }
+/*contact.html*/
+.contact__info{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__info .contacts{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+.contact__info a::after{
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    content: "";
+    padding-left:  65px;
+    padding-top: 15px;
+}
+.contact__info a:nth-child(1)::after{
+    content: "Follow StockTrader on Twitter";
+}
+.contact__info a:nth-child(2)::after{
+    content: "Join StockTrader Discord Channel";
+}
+.contact__info a:nth-child(3)::after{
+    content: "Subscribe StockTrader on YouTube";
+}
+.contact__info a:nth-child(4)::after{
+    content: "Join StockTrader Telegram Channel";
+}
+.contact__info a:nth-child(5)::after{
+    content: "Email Us: Stocktrader@gmail.com";
+}
+
+.contacts__footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Pricing */
+.pricing__title{
+    line-height: 38px;
+    text-align: center;
+    font-size: 28px;
+    color: #a0a09e;
+}
+.pricing__title2{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 24px;
+    color: #a0a09e;
+}
+.pricingmiddle__content{
+    padding:  100px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.packages{
+   
+    width: 78%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.package{ 
+    border-radius: 50px;
+    width: 32%;
+    height: 650px;
+    background: #8082828c;
+}
+.package__title{
+    margin-top: 15px;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.package__price{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+.packege__features{
+    height: 400px;
+}
+.package__feature{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 15% ;
+}
+.package__feature::before{
+    content: url('../img/check24.png');
+    padding-right: 15px;
+   
+
+}
+.package__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.package__button{
+    pointer-events: all;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.package__button:hover{
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #1C1C1E;
+    box-shadow: -3px 3px 7px  #fff, 3px 3px 5px rgb(255, 255, 255);
+    
+}
+.descp{
+    margin-top: -30px;
+    margin-left: 30px;
+}
+.bronze{
+    color: #CD7F32;
+}
+.silver{
+    color: #c0c0c0;
+}
+.gold{
+    color: #ffd700;
+}
+.compare__package{
+    background-color: #8082828c;
+    border-radius: 50px;
+    padding-bottom: 30px;
+    margin: 5% 100px;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.compare__ft{
+    font-size: 14px;
+    line-height: 26px;
+}
+.compare__title{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 90px;
+}
+.compare{
+    line-height: 26px;
+}
+
 
 /* Media */
 
@@ -1281,13 +1474,46 @@ footer{
     .bottom{
         padding-top: 150px;
     }
-
+    .contact__info{
+        display: block;
+    }
+    .footer__logo{
+        width: 30px;
+    }
 }
 @media (max-width:1400px){
     .middle__left{
         height: 125%;
   }
 }
+@media (max-width:1135px){
+    .packages{
+        display: block;
+  }
+  .package{
+    min-width: 400px;
+    width: 100%;
+  }
+}
+@media (max-width:1171px){
+    .compare__package{
+        height: 630px;
+    }
+    .compare__title{
+        margin-top: -50px;
+    }
+    .compare__ft{
+        width: 180px;
+        height: 520px;
+    }
+    .compare{
+        margin-top: 50px;
+        line-height: 40px;
+    }
+}
+
+
+
 
 
 
