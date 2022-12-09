@@ -744,9 +744,6 @@ header.active2{
     }
 }
 /*middle__right*/
-.middle__right{
-
-}
 .features{
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
