@@ -38,6 +38,17 @@ stats.forEach((stat)=>{
   }, duration);
 });
 
+$(document).ready(function(){
+    $('.faxitem__title').click(function(events){
+        if($('.fax__content').hasClass('one')){
+            $('.faxitem__title').not($(this)).removeClass('active');
+            $('.faxitem__text').not($(this).next()).slideUp(300);
+
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+    })
+})
+
 
 
 

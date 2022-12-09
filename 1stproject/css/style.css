@@ -132,7 +132,7 @@ header.active2{
 
 /*content*/
   .content{
-    pointer-events: all; /*none*/
+    pointer-events: none; /*noneIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII*/
     margin-top: 150px;
     margin-left: 0;
     margin-right: 35px;
@@ -845,10 +845,10 @@ header.active2{
     font-size: 32px;
 }
 .products{
-    color: #000000;
+    color: #fff;
     width: 52%;
     height: 700px;
-    background-color: #fff;
+    background-color: #8082828c;
     border-radius: 50px;
     
 }
@@ -1198,7 +1198,7 @@ footer{
     text-align: center;
 }
 .packege__features{
-    height: 400px;
+    height: 380px;
 }
 .package__feature{
     font-size: 18px;
@@ -1224,7 +1224,7 @@ footer{
     width: 150px;
     height: 60px;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 18px;
     transition: all 0.3s ease 0s;
 }
 .package__button:hover{
@@ -1271,7 +1271,55 @@ footer{
     line-height: 26px;
 }
 
-
+/* fax */
+.fax__wrapper{
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fax__title{
+    padding: 80px 0;
+    font-size: 30px;
+    text-align: center;
+}
+.fax__item{
+    pointer-events: all;
+    cursor: pointer;
+    max-width: 600px;
+    background-color:#8082828c;
+    margin: 10px 10px;
+}
+.faxitem__title{
+    height: 60px;
+    display: flex;
+    justify-items: stretch;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+}
+.faxitem__titletext{
+    width: 100%;
+}
+.arrowright{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../img/arrow_right.png');
+}
+.faxitem__title.active .arrowright{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../img/arrow_down.png');
+}
+.faxitem__text{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    display: none;
+    padding:0 15px 15px  15px;
+}
 /* Media */
 
 
@@ -1445,6 +1493,9 @@ footer{
     .feature__icon{
         width: 80px;
         height: 80px;
+    }
+    .fax__wrapper{
+        display: block;
     }
     
 }
