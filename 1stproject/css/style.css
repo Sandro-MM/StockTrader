@@ -977,7 +977,7 @@ header.active2{
 }
 .email{
     pointer-events: all;
-    color: #fff;
+    color: #000000;
     background: transparent;
     margin-top: 10px;
     margin-left: 30px;
@@ -1317,6 +1317,68 @@ footer{
     display: none;
     padding:0 15px 15px  15px;
 }
+
+/*myaccount*/
+
+.logreg__switch{
+    display: flex;
+    justify-content: center;
+}
+.regbox__button{
+    pointer-events: all;
+    background-color: #1C1C1E;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+}
+.logreg__switch :hover{
+    font-weight: 450;
+    color: #1C1C1E;
+    background: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #1C1C1E;
+    box-shadow: -3px 3px 7px  #ffffff73, 3px 3px 5px rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+}
+.regboxbox{
+    font-size: 18px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    
+}
+.regbox.active{
+    font-weight: 800;
+    text-transform: uppercase;
+   
+}
+
+
+.logreg__box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    pointer-events: all;
+    pointer-events: all;
+    margin: 100px;
+    display: none;
+    transition: all 0.3s ease 0s;
+
+}
+.login.active{
+    pointer-events: all;
+    margin: 100px;
+    display: block;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+
 /* Media */
 
 

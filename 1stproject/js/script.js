@@ -49,6 +49,26 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    $('.logreg__switch').click(function(events){
+        if($('.login').hasClass('active')){
+            $('.login').not($('.login')).removeClass('active');
+
+        }
+        $('.login').toggleClass('active').next();
+    })
+})
+$(document).ready(function(){
+    $('.logreg__switch').click(function(events){
+        if($('.regbox').hasClass('active')){
+            $('.regbox').not($('.regbox')).removeClass('active');
+
+        }
+        $('.regbox').toggleClass('active').next();
+    })
+})
+
+
 
 
 
